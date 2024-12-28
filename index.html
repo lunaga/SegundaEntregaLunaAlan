@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peachy Platinums</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Peachy Platinums</h1>
+            <button id="menuToggle" class="menu-toggle">
+                <i data-lucide="menu"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#" class="nav-link">Inicio</a></li>
+                    <li><a href="#" class="nav-link">Juegos</a></li>
+                    <li><a href="#" class="nav-link">Nosotros</a></li>
+                    <li><a href="#" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Buscar juegos...">
+                    <i data-lucide="search" class="search-icon"></i>
+                </div>
+                <button id="cartToggle" class="cart-toggle">
+                    <i data-lucide="shopping-cart"></i>
+                    <span id="cartCount" class="cart-count">0</span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <h2>Nuestros Juegos</h2>
+            <div id="gameGrid" class="game-grid">
+            </div>
+        </main>
+
+        <div id="cartModal" class="cart-modal">
+            <div class="cart-content">
+                <div class="cart-header">
+                    <h3>Carrito</h3>
+                    <button id="closeCart" class="close-button">&times;</button>
+                </div>
+                <div id="cartItems">
+                </div>
+                <div id="cartTotal" class="cart-total">
+                    <p>Total: $<span id="totalPrice">0.00</span></p>
+                    <button id="checkoutButton" class="checkout-button">
+                        <i data-lucide="shopping-cart"></i> Proceder al pago
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Peachy Platinums. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
+
+
